@@ -140,12 +140,15 @@ filtered <- filtered[!duplicated(rowData(filtered)$feature_symbol), ]
 ## SC3-solution ----
 # Quantitative measure of the diagonality of the consensus matrix:
 sc3_plot_silhouette(filtered, k = 9)
+sc3_plot_silhouette(filtered, k = 13)
 
 # Cluster stability:
 sc3_plot_cluster_stability(filtered, k = 9)
+sc3_plot_cluster_stability(filtered, k = 13)
 
 # Cluster consensus:
 sc3_plot_consensus(filtered, k = 9)
+sc3_plot_consensus(filtered, k = 13)
 
 # PCA_plots:
 plotPCA(filtered, colour_by = "age")
