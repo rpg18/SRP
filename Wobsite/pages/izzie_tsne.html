@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="attempt1.new.css">
+
+<head>
+    <title>A study of ...</title>
+    <center><h1>A study of...</h1></center>
+    <hr>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Re-analysis" onclick="history.back()">
+</form>
+	<a href="../attempt2.html">Home</a>
+
+    <p>Please observe the tSNE plot, coloured by either cell type or assigned cluster</p>
+    <p>Single cells coloured by cell type are as defined by Darmanis <i>et al.</i> (2015)</p>
+	<p>Single cells coloured by cluster are as found in our replication of Darmanis <i>et al.</i> (2015)</p>
+<h3>An interactive graph provided by RShiny</h3>
+<div style="display: inline-block">
+    <iframe src=" http://bioinf6.bioc.le.ac.uk:3838/srpgrpa/tSNE/" style="border: none; width: 900px; height: 500px"></iframe>
+</div>
+<div style="display: inline-block">
+   <h3>Cluster 1 = black <br>
+Cluster 2 = orange<br>
+Cluster 3 = purple<br>
+Cluster 4 = green<br>
+Cluster 5 = red<br>
+Cluster 6 = blue<br>
+Cluster 7 = yellow<br>
+Cluster 8 = cyan<br>
+Cluster 9 = pink<br>
+<br>
+Endothelial = black<br>
+Neurons = orange<br>
+Astrocytes = purple<br>
+OPCs = green<br>
+Fetal quisecent = red<br>
+Microglia = blue<br>
+Fetal replicating = magenta<br>
+Hybrid = cyan<br>
+Oligodendrocytes = grey</h3>
+</div>
+    <p>.............................. </p>
+    <p>You may wish to compare this plot to the <a href="./tsne_pca_graphs.html">PigeonPigs pipeline tSNE</a></p>    
+
+
+</div>
+<p>.............................. </p>
+<p>Below, see a graph generated with the Mclust package showing BIC classification using different models. This was used to identify the number of clusters, here shown as 9. Also, see a graph of Uncertainty of classification within members of each cluster.</p>
+<h3>Two non-interactive graphs provided by RShiny</h3>  
+<p>.............................. </p>
+<iframe src=" http://bioinf6.bioc.le.ac.uk:3838/srpgrpa/BIC/" style="border: none; width: 1000px; height: 900px"></iframe>
+<p>.............................. </p>
+<p>.............................. </p>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by Graham, Raquel and Izzie
+  </p>
+</footer>
+
+</body>
+</html>

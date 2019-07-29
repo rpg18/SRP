@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="attempt1.new.css">
+
+<head>
+    <title>A study of ...</title>
+    <center><h1>A study of...</h1></center>
+    <hr>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Re-analysis" onclick="history.back()">
+</form>
+	<a href="../attempt2.html">Home</a>
+
+    <p>Please observe the clear separation between adult and fetal neuronal cells</p>
+    <p>Failure to observe will not be tolerated</p>
+    <p>PCA on adult and fetal neuronal cells for up to the first five principal components from our re-analysis of Darmanis <i>et al.</i> (2015).</p>
+<h3>An interactive graph provided by RShiny</h3>
+<div style="display: inline-block">
+   <iframe src=" http://bioinf6.bioc.le.ac.uk:3838/srpgrpa/PCA_neurons_by_cell_type/" style="border: none; width: 900px; height: 600px"></iframe>
+</div>
+<div style="display: inline-block">
+   <h2><br><br><br><br><br><br><br><br>Red: neurons <br> Green: fetal quiescent  <br> Purple: fetal replicating<br><br><br><br><br><br><br<br><br><br><br><br><br><br></h2>
+</div>
+    <p>.............................. </p>
+    <p>You may wish to compare this plot to the <a href="./tsne_pca_graphs.html">PigeonPigs pipeline PCA</a></p>    
+
+
+</div>
+    
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by Graham, Raquel and Izzie
+  </p>
+</footer>
+
+</body>
+</html>

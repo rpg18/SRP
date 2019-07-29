@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="attempt1.new.css">
+
+<head>
+    <title>A study of ...</title>
+    <center><h1>A study of...</h1></center>
+    <hr>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Go Back" onclick="history.back()">
+</form>
+	<p></p>
+	<a href="../attempt2.html">Home</a>
+<p></p>
+	<p>This can be a 2D Diffusion Map, PCA or tSNE plot, where cells are sized by expression level of selected gene</p>
+<p>Make sure the entered gene is in the PigeonPigs expression matrix! We suggest checking the <a href="./genes_db.html">Gene Database</a></p>
+<p>We suggest PLP1, DCX, TUBB, GAD1, AQP4, OLIG1, B2M and A2M for interesting results, as we identified these as possible marker genes</p>
+<p>Diffusion Map from R package destiny (Angerer <i>et al.</i>, 2016), PCA and tSNE from R package scater (McCarthy <i>et al.</i>, 2017).</p>
+<h3>An interactive graph provided by RShiny</h3>
+    <iframe src=" http://bioinf6.bioc.le.ac.uk:3838/srpgrpa/Diffusion_Map/" style="border: none; width: 1200px; height: 700px"></iframe>
+   
+
+
+    
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by Graham, Raquel and Izzie
+  </p>
+</footer>
+
+</body>
+</html>
+
+
+

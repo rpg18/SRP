@@ -1,0 +1,43 @@
+@charset "utf-8";
+h1{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 60px;
+    color:floralwhite;
+    background-color: dimgrey
+}
+
+h2{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 40px;
+    color:floralwhite;
+}
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Home {background-color:red;}
+#Summary {background-color:black;}
+#Re-analysis {background-color:orange;}
+#PigeonPigs {background-color:green;}

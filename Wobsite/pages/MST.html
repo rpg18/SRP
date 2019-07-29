@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="attempt1.new.css">
+
+<head>
+    <title>A study of ...</title>
+    <center><h1>A study of...</h1></center>
+    <hr>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Re-analysis" onclick="history.back()">
+</form>
+	<a href="../attempt2.html">Home</a>
+
+    <p></p>
+    <p>.............................. </p>
+<h3>Graphs provided by RShiny</h3>
+    <iframe src=" http://bioinf6.bioc.le.ac.uk:3838/srpgrpa/MST/" style="border: none; width: 1200px; height: 700px"></iframe>
+    <p>Minimum spanning trees, showing the re-analyis result of 13 adult subcommunities, and 10 fetal subcommunities of neuronal cells</p>
+    <p>Minimum spanning performed using igraph package (Csardi, 2006), and communities identified with walktrap community algorithm.</p>
+
+
+</div>
+    
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by Graham, Raquel and Izzie
+  </p>
+</footer>
+
+</body>
+</html>

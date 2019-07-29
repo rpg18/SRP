@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="attempt1.new.css">
+
+<head>
+    <title>A study of ...</title>
+    <center><h1>A study of...</h1></center>
+    <hr>
+</head>
+<body>
+
+<form>
+  <input type="button" value="PigeonPigs" onclick="history.back()">
+</form>
+	<p></p>
+	<a href="../attempt2.html">Home</a>
+	<center><h1>The Gene Database</h1></center>
+<p>This page allows the querying of PigeonPigs gene counts matrix.</p>
+	<p>Simply enter a gene name in the query box below, and a table of every cell showing expression of that gene will be returned, along with useful information such the cell tissue type, absolute read count, cell type assigned by Darmanis <i>et al.</i> (2015) and the PigeonPigs cluster assignment of that cell!</p>
+	<p>After searching for a gene in the database, why not use this <a href="./diffusion_map.html">Shiny plot</a> for further visualisation of gene expression</p>
+	<p></p>
+
+    <p>Query Gene database</p>
+    <form action="P2XRbase.php" method="post" target="PutTableHere">
+   <p> Gene: <input type="text" name="gene" /></p> 
+   <p><input type="submit" value="Press to search"></p>
+</form>
+    <p>.............................. </p>
+
+    <iframe width ="900" height = "900" name= "PutTableHere" frameborder="1"></iframe>
+
+</div>
+    
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Powered by Graham, Raquel and Izzie
+  </p>
+</footer>
+
+</body>
+</html>
+
+
+
