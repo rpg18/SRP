@@ -19,8 +19,8 @@
 5- seurat.R
 
 # Website: wb
-1- FOLDER: Wobsite \
-2- FOLDERS: BIC, Diffusion_Map, MST, PCA_neurons_by_cell_type, gene_boxplot, our_tSNE_PCA_sce, plotDcater, tSNE \
+1- Wobsite Folder\
+2- Other Folders \
 3- P2XRbase.php \
 4- project_sql.sql 
 
