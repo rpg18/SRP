@@ -6,7 +6,7 @@ THEfinalcode.R\
 normboxplot.R\
 topgenes.R 
 
-# New pipeline analysis files: NP 
+# PigeonPigs pipeline: PP 
 index \
 alignment \
 mmquant \
