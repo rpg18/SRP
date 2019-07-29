@@ -7,7 +7,7 @@
 3- STAR_build.sh \
 4- second_trimmed_fastq.sh \
 5- structure2.py\
-6- original_data_analysis.R\
+6- original_data_analysis.R
 
 # PigeonPigs pipeline: pp 
 1- Rsubread_bioldIndex \
@@ -21,5 +21,5 @@
 1- FOLDER: html \
 2- FOLDERS: BIC, Diffusion_Map, MST, PCA_neurons_by_cell_type, gene_boxplot, our_tSNE_PCA_sce, plotDcater, tSNE \
 3- P2XRbase.php \
-4- project_sql.sql \
+4- project_sql.sql 
 
