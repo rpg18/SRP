@@ -12,17 +12,17 @@ with open("SraRunTable.txt") as file: # data from Darmanis et at, 2015
         with open('pipe2_SRR.tsv', 'w') as ref: # create and write new file
             info = [[aa[7],aa[10],aa[12]] for aa in liston]
 			# list of [SRR_sample_name, age of individuals and cell_type]
-            for item in info:                 
-                dataSRR = '\t'.join(item)
-                ref.writelines(dataSRR+'\n')
+            for item in info:	# a for loop to go through items of info list              
+                dataSRR = '\t'.join(item) # join strings at the tab
+                ref.writelines(dataSRR+'\n') # write strings-rows into new file
 
 
         with open('pipe2_GSM.tsv', 'w') as ref: # create and write new file
             info = [[aa[9],aa[10],aa[12]] for aa in liston]
 			# list of [GSM_sample_name, age of individuals and cell_type]
-            for item in info:                 
-                dataGSM = '\t'.join(item)
-                ref.writelines(dataGSM+'\n')
+            for item in info:	# a for loop to go through items of info list            
+                dataGSM = '\t'.join(item) # join strings at the tab
+                ref.writelines(dataGSM+'\n') # write strings-rows into new file
 
 
 
