@@ -1,4 +1,6 @@
 ## This script creates two tsv files that store sample name (SRR or GSM prefixes)
+# pipe2_GSM is the file that we need to generate the SingleCellExperiment (SCE) object: For Darmaris et al, 2015 Matrix
+# pipe2_SRR.tsv is the file that we need to generate the SCE object: For MMquant Matrix 
 
 liston =[] # open liston list
 with open("SraRunTable.txt") as file: # data from Darmanis et at, 2015
@@ -11,16 +13,16 @@ with open("SraRunTable.txt") as file: # data from Darmanis et at, 2015
             info = [[aa[7],aa[10],aa[12]] for aa in liston]
 			# list of [SRR_sample_name, age of individuals and cell_type]
             for item in info:                 
-                wow = '\t'.join(item)
-                ref.writelines(wow+'\n')
+                dataSRR = '\t'.join(item)
+                ref.writelines(dataSRR+'\n')
 
 
-        with open('pipe2.tsv', 'w') as ref: # create and write new file
+        with open('pipe2_GSM.tsv', 'w') as ref: # create and write new file
             info = [[aa[9],aa[10],aa[12]] for aa in liston]
 			# list of [GSM_sample_name, age of individuals and cell_type]
             for item in info:                 
-                wow = '\t'.join(item)
-                ref.writelines(wow+'\n')
+                dataGSM = '\t'.join(item)
+                ref.writelines(dataGSM+'\n')
 
 
 
