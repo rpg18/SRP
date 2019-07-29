@@ -1,7 +1,7 @@
 # SRP
 
 
-# Old pipeline: ra
+# Re-Analysis pipeline: ra
 1- sra_download.pl \
 2- first_untrimmed_fastq.sh \
 3- STAR_build.sh \
