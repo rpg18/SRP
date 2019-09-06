@@ -10,7 +10,7 @@
 6- original_data_analysis.R
 
 # PigeonPigs pipeline: pp 
-1- Rsubread_bioldIndex \
+1- Rsubread_buildIndex \
 2- Rsubread.R \
 2.1- Rsubread_mmquant.sh  
 3- sc3_sce_Info.py \
